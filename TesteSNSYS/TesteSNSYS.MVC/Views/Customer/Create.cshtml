@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="row">
+    <div class="col-md-12 pt-2">
+        <div class="form-group">
+            <label id="lblName">Name *</label>
+            <input type="text" class="form-control" id="Name" placeholder="Name" />
+            <input type="hidden" id="Id" value="0" />
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 pt-2">
+        <div class="form-group">
+            <label id="lblEmail">E-mail *</label>
+            <input type="email" class="form-control" id="Email" placeholder="E-mail" />
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 pt-2">
+        <div class="form-group">
+            <label id="lblPhone">Phone *</label>
+            <input type="tel" class="form-control" id="Phone" placeholder="Phone" onkeypress="formatPhone(this);" />
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="d-flex justify-content-end flex-wrap pt-4">
+        <button type="button" class="btn btn-danger w-25" id="btnReturn">Return</button>
+        <button type="button" class="btn btn-primary w-25" id="btnUpdate">Save</button>
+    </div>
+</div>
